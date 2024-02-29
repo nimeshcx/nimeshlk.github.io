@@ -109,7 +109,7 @@ document.getElementById('jd').onclick = ()=>{
    "height":1024,
    "alchemy":true,
    "pr":true,
-   "cookie": cookie,
+   "cookie": "",
    "u":u,
    "sub":sub
   };
