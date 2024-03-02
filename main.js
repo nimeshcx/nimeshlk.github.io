@@ -154,7 +154,7 @@ img.addEventListener("click", function() {
            img.id = "hehe"
            pi.innerHTML = ''
            pi.innerText = ''
-           img.src = data.result[0];
+           img.src = data.result[2];
            div.appendChild(img);
           const img2 = document.createElement('img');
           img2.src = data.result[1];
