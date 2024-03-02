@@ -143,6 +143,7 @@ document.getElementById('jd').onclick = ()=>{
            console.log(data.result)
            const div = document.getElementById('imshow')
            const img = document.createElement('img');
+           img.id = "hehe"
            pi.innerHTML = ''
            pi.innerText = ''
            img.src = data.result;
