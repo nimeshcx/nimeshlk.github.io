@@ -154,8 +154,11 @@ img.addEventListener("click", function() {
            img.id = "hehe"
            pi.innerHTML = ''
            pi.innerText = ''
-           img.src = data.result;
+           img.src = data.result[0];
            div.appendChild(img);
+          const img2 = document.createElement('img');
+          img2.src = data.result[1];
+           div.appendChild(img2);
            btn.disabled = false
            isimg = true
            
