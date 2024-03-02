@@ -77,8 +77,7 @@ img.addEventListener("click", function() {
 
   btn.onclick = async ()=>{ 
 
-
-
+let div = document.getElementById('imshow');
     
     isimg = false
     let isc = false
@@ -90,15 +89,26 @@ img.addEventListener("click", function() {
   
   negative_prompt = nps
   btn.disabled = true
- let div = document.getElementById('imshow');
   div.innerHTML = '';
   document.getElementById('imshow').innerHTML = ''
-  let pi = document.createElement('p')
+  let pi = document.createElement('h5')
   pi.innerText = 'Generating Image... Estimated Time: 20s'
-  document.getElementById('imshow').append(pi)
+ // document.getElementById('imshow').append(pi)
   let count = 0;
   seed = seed
 
+
+
+
+let progress = document.createElement('progress');
+progress.value = 1;
+progress.max = 100;
+
+div.appendChild(progress);
+setInterval(()=>{
+progress.value+=3},1100)
+
+    
 
     async function generate(){
     cookie = localStorage.getItem("cookie")
@@ -153,7 +163,8 @@ img.addEventListener("click", function() {
            localStorage.setItem("sub", data.sub);
            localStorage.setItem("u", data.u);
            console.log(data.result)
-           const div = document.getElementById('imshow')
+         progress.innerHTML = ''
+         progress.style.display = 'none';
            const img = document.createElement('img');
            img.id = "hehe"
            pi.innerHTML = ''
