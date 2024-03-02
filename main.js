@@ -76,6 +76,31 @@ img.addEventListener("click", function() {
   }
 
   btn.onclick = async ()=>{ 
+    let loader= document.createElement('div')
+    loader.id = 'progress-bar'
+     let div = document.getElementById('imshow');
+    div.append(loader)
+var progressBar = new ProgressBar.Line('#progress-bar', {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 30000, 
+    color: '#FFEA82',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'}
+});
+
+
+var interval = setInterval(function() {
+    progressBar.animate(1.0); 
+    if (progressBar.value() >= 1) {
+        clearInterval(interval); 
+    }
+}, 1000); 
+
+
+
+    
     isimg = false
     let isc = false
     let id = ''
@@ -86,7 +111,7 @@ img.addEventListener("click", function() {
   
   negative_prompt = nps
   btn.disabled = true
-  const div = document.getElementById('imshow');
+ let div = document.getElementById('imshow');
   div.innerHTML = '';
   document.getElementById('imshow').innerHTML = ''
   let pi = document.createElement('p')
