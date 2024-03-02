@@ -377,7 +377,6 @@ font-family: 'Barlow Condensed';
   line-height: 1.2;
   font-size: 24px;
 }
-
 .ad{
   display: flex;
   flex-direction: row;
@@ -391,7 +390,39 @@ font-family: 'Barlow Condensed';
 }
     #imshow{
 margin-bottom: 12px;}
-
+#imshow progress {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensure the progress bar is treated as a block-level element */
+   height: 25px;
+  width: 250px;
+}
+    #imshow {
+    text-align: center;
+}
+    #imshow {
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+   
+}
+    #imshow h5{
+      display: block;
+}
+progress::-webkit-progress-bar {
+    background-color: rgb(0,5,60);
+}
+progress::-webkit-progress-value {
+    background-color: rgb(0, 255, 149);
+}
+progress {
+    background-color: rgb(0,5,60);
+}
+progress::-moz-progress-bar {
+    background-color: rgb(0, 255, 149); }
+    progress {
+    background: rgb(0,10,60);
+}
   </style>
 </head>
 <body>
