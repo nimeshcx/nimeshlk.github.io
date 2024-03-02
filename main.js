@@ -7,7 +7,14 @@ document.getElementById('jd').onclick = ()=>{
   /*document.getElementById('ow').onclick = ()=>{
     window.open('https://www.buymeacoffee.com/mygx')
   }*/
-  
+  let isimg = false
+if(isimg == true){
+  img = document.getElementById('hehe')
+img.addEventListener("click", function() {
+    var imageUrl = this.src;
+    window.open(imageUrl, "_blank");
+});
+}
   let dialog = document.getElementById('dialog')
   let openbtn = document.getElementById('Advance Setting')
   let closebtn = document.getElementById('close')
@@ -69,6 +76,7 @@ document.getElementById('jd').onclick = ()=>{
   }
 
   btn.onclick = async ()=>{ 
+    isimg = false
     let isc = false
     let id = ''
 
@@ -149,6 +157,7 @@ document.getElementById('jd').onclick = ()=>{
            img.src = data.result;
            div.appendChild(img);
            btn.disabled = false
+           isimg = true
            
        } catch (error) {
          btn.disabled = false
