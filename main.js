@@ -170,6 +170,7 @@ progress.value+=3},1100)
            pi.innerHTML = ''
            pi.innerText = ''
            img.src = data.result[2];
+         img.id = "i1"
            div.appendChild(img);
           const img2 = document.createElement('img');
           img2.src = data.result[1];
