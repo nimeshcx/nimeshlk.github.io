@@ -80,7 +80,7 @@ setTimeout(()=>{
   btn.onclick = async ()=>{ 
 
 let div = document.getElementById('imshow');
-    if(relod==true){
+    if(reload==true){
       window.location.reload();
     }
     isimg = false
