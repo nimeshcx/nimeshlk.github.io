@@ -47,7 +47,7 @@ img.addEventListener("click", function() {
   isFumes = true
   let prompt = 'CINEMATIC'
   let nps = ' ,(bad hands, bad anatomy, bad body, bad face, bad teeth, bad arms, bad legs, deformities:1.3),poorly drawn,deformed hands,deformed fingers,deformed faces,deformed eyes,mutated fingers,deformedbody parts,mutated body parts,mutated hands, disfigured,oversaturated,bad anatom,cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, deformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,deformed eyes'
-
+let reload = false
   
   document.getElementById('styles').onchange = ()=>{
     const selectedStyle = document.querySelector('input[name="style"]:checked');
@@ -74,11 +74,15 @@ img.addEventListener("click", function() {
      
     }
   }
-
+setTimeout(()=>{
+  reload = true
+},200000)
   btn.onclick = async ()=>{ 
 
 let div = document.getElementById('imshow');
-    
+    if(relod==true){
+      window.location.reload();
+    }
     isimg = false
     let isc = false
     let id = ''
