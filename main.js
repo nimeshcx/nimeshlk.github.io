@@ -76,7 +76,7 @@ let reload = false
   }
 setTimeout(()=>{
   reload = true
-},200000)
+},2000000)
   btn.onclick = async ()=>{ 
 
 let div = document.getElementById('imshow');
