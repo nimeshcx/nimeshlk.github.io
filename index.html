@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  if (window !== window.top) {
-    throw new Error("This site cannot be embedded in an iframe.");
-  }
-</script>
-
-
+<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+  <script>
+    if (window !== window.top) {
+      throw new Error("This site cannot be embedded in an iframe.");
+    }
+      </script>
   <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
 
   <script type='text/javascript'>
