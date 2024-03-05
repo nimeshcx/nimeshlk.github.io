@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-  <script>
-    if (window !== window.top) {
-      throw new Error("This site cannot be embedded in an iframe.");
-    }
-      </script>
+if (window !== window.top) {
+    window.top.location = "https://fumesai.web.app";
+  }
   <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
 
   <script type='text/javascript'>
