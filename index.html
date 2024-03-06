@@ -6,7 +6,7 @@ if (window !== window.top) {
     window.top.location = window.location;
   }</script>
   <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-  
+  <meta http-equiv="X-Frame-Options" content="DENY">
   <script type='text/javascript'>
   window.smartlook||(function(d) {
     var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
