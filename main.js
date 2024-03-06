@@ -78,7 +78,7 @@ setTimeout(()=>{
   reload = true
 },2000000)
   btn.onclick = async ()=>{ 
-
+btn.innerText = "CANCEL"
 let div = document.getElementById('imshow');
     if(reload==true){
       window.location.reload();
