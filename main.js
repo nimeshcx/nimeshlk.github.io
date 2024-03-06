@@ -34,7 +34,8 @@ img.addEventListener("click", function() {
   let seedp = document.getElementById('seedp')
   let stepp = document.getElementById('stepp')
   let gdsp = document.getElementById('gdsp')
-  let btn = document.getElementById('create')
+  let btn = document.getElementById('create') 
+let cn = false
   gd.addEventListener('input',()=>{
    gdsp.innerText = gd.value
   })
@@ -78,20 +79,22 @@ setTimeout(()=>{
   reload = true
 },2000000)
 
-btn.onclick = ()=>{
 
 
-if(btn.innerText == 'CANCEL'){
-  window.location.reload()
-}
 
 
-}
+
+
+
 
 
 
   btn.onclick = async ()=>{ 
+    if(cn==true){
+  window.location.reload()
+}
 btn.innerText = "CANCEL"
+    cn = true
 let div = document.getElementById('imshow');
     if(reload==true){
       window.location.reload();
@@ -174,7 +177,8 @@ progress.value+=3},1100)
            img.src = imgData;
            div.appendChild(img);
            */
-           
+           cn = false
+         btn.innerText = "CREATE" 
            const data = await response.json(); 
            localStorage.setItem("cookie", data.token);
            localStorage.setItem("sub", data.sub);
