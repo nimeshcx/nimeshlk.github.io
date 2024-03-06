@@ -105,7 +105,7 @@ let div = document.getElementById('imshow');
 
   
   negative_prompt = nps
-  btn.disabled = true
+ // btn.disabled = true
   div.innerHTML = '';
   document.getElementById('imshow').innerHTML = ''
   let pi = document.createElement('h5')
