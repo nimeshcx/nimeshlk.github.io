@@ -157,7 +157,7 @@ progress.value+=3},1100)
 
    
        try {
-           const response = await fetch('https://l-d83c.onrender.com/leonardo', {
+           const response = await fetch('https://idk-2pnx.onrender.com/leonardo', {
                method: 'POST',
                headers: {
                    'Content-Type': 'application/json',
