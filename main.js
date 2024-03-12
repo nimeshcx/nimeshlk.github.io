@@ -144,8 +144,8 @@ progress.value+=3},1100)
       
       'prompt': inp.value,
       'nprompt': np.value,
-      "steps": step.value,
-      'gd': gd.value,
+      "steps": Number(step.value),
+      'guidenceScale':Number(gd.value),
       "style": prompt,
       "width": 1024,
    "height":1024,
