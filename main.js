@@ -187,10 +187,11 @@ progress.value+=3},1100)
          progress.innerHTML = ''
          progress.style.display = 'none';
            const img = document.createElement('img');
+a = "1"
            img.id = "hehe"
            pi.innerHTML = ''
            pi.innerText = ''
-           img.src = data.result[2];
+           img.src = data.img.a;
          if(window.innerWidth<600){
            img.id = "i1"
          }
