@@ -739,7 +739,8 @@ a = "1"
                 } catch (error) {
                     btn.disabled = false;
                     console.error('An error occurred:', error);
-                    pi.innerText = 'An error occurred, try changing your prompt';
+                    pi.innerText = 'reCaptcha human verification failed ❌ user is suspected to be bot ';
+                  pi.style.color = "white" 
                 }
             }
 
