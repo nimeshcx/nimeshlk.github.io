@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <script type='text/javascript'>
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', '3871167a80b985858af5636711a34302effc7033', { region: 'eu' });
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -87,7 +76,7 @@
       cursor: pointer;
     }
    #cont button:hover {
-      background: linear-gradient(145deg, #00ffab, #, rgb(255, 0, 43));
+      background: linear-gradient(145deg, #00ffab,  rgb(255, 0, 43));
     }
     #as {
       display: flex;
@@ -213,62 +202,14 @@ label{
   flex-wrap: wrap;
  
 }
-#imshow{
-   
-   width: 120vh;
-   height: 54vh;
-   display: flex;
-   flex-direction: row;
-   overflow-y: hidden;
-   margin: auto;
-gap: 6px;
-   margin-top: 30px;
-   padding-bottom: 4px;
-   background: linear-gradient(black, black) padding-box,
-                linear-gradient(to right, red, blue) border-box;
-    border-radius: 20px;
-    border: 2.5px solid transparent;
-  
- }
- #imshow img{
-width:57vh;
-height: 53vh;
-   margin: auto;
-margin-top: 7px;
-border-radius: 10px;
-margin-left: 0px;
- }
- #imshow p{
-  color: white;font-family: 'Barlow Condensed'; margin: auto; font-size: 3vh;text-align: center;
-}
+
+
 @media screen and (min-width: 500px) and (max-width: 720px) {
   dialog{
     
     max-width: 420px;
   }
-  #imshow{
-   
-    border: 2px solid blue;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    margin: auto;
-    background: linear-gradient(black, black) padding-box,
-                linear-gradient(to right, red, blue) border-box;
-    border-radius: 20px;
-    border: 2.5px solid transparent;
-    margin-top: 30px;
-    padding-bottom: 7px;
-    gap: 14px;
-  }
-  #imshow img{
-width: 95%;
-height: 100%;
-margin: auto;
-margin-top: 7px;
-  }
+
   #cont{
   height: 7vh;
  }
@@ -285,41 +226,14 @@ margin-top: 7px;
   dialog {
     max-width: 300px;
   }
-  #imshow{
-   
-   border: 2px solid blue;
-   width: 330px;
-   height: 330px;
-   display: flex;
-   flex-direction: column;
-   overflow-y: scroll;
-   margin-top: 30px;
-   padding-bottom: 7px;
-   gap: 14px;
-   background: linear-gradient(black, black) padding-box,
-                linear-gradient(to right,#FF0000, #9900FF) border-box;
-    border-radius: 20px;
-    border: 2.5px solid transparent;
- }
- #jd{
-  font-size: 14px;
- }
- #imshow p{
-  width: 80%;
- }
 
- #imshow img{
-width: 95%;
-height: 100%;
-   margin: auto;
-   display:block;
-   margin-bottom: 0px;
-   margin-top:0px;
-   
- }
- #imshow p{
-  font-size: 20px;
- }
+
+#jd {
+   font-size: 14px;
+}
+
+
+
 #styles{
   align-items: center;
   justify-content: center;
@@ -398,24 +312,16 @@ font-family: 'Barlow Condensed';
   margin-left:15px;
   font-family: 'Barlow Condensed'
 }
-    #imshow{
-margin-bottom: 12px;}
+    
 #imshow progress {
     margin-left: auto;
     margin-right: auto;
-    display: block; /* Ensure the progress bar is treated as a block-level element */
+    display: block; 
    height: 25px;
   width: 250px;
+  margin-top: 20px;
 }
-    #imshow {
-    text-align: center;
-}
-    #imshow {
-    display: flex;
-    justify-content: center; /* Align horizontally */
-    align-items: center; /* Align vertically */
-   
-}
+
     #imshow h5{
       display: block;
 }
@@ -433,13 +339,9 @@ progress::-moz-progress-bar {
     progress {
     background: rgb(0,10,60);
 }
-  #i1{
-    margin-top: 330px; 
-        padding-top: 330px;
-  }
+
     #x{
       width:300px;
-
       padding:0px;
       gap:0px;
     }
@@ -449,6 +351,64 @@ progress::-moz-progress-bar {
       font-family: Arial;
       letter-spacing: 0.3px;
     }
+
+    #imshow {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    max-height: 400px;
+    margin-top: 25px;
+}
+
+#imshow img {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 10px;
+    
+}
+#ratio{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  color: white;
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  #imshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    max-width: 330px;
+    margin-top: 50px;
+    margin: auto;
+    overflow: auto; 
+    height: 400px;
+
+}
+
+#imshow img {
+    max-width: 100%; 
+    max-height: 100%; 
+    margin: 10px;
+    object-fit: contain;
+ 
+
+
+
+}
+#img1{
+  padding-top: 125%;
+}
+}
+#main{
+  margin-bottom: 30px;
+}
+
   </style>
 </head>
 <body>
@@ -460,13 +420,13 @@ progress::-moz-progress-bar {
   </button>-->
 </div>
 
+
 <h3 id="grad">Please like this space ❤️</h3><a href="https://www.buymeacoffee.com/mygX" id="aaa" target=”_blank”>BUY ME COFFE</a>
 <p style="color:white;font-family:Barlow Condensed;margin-left:15px">Please open a community discussion if you face any problem or need some assistance. CHECKOUT <a href="https://huggingface.co/spaces/FumesAI/text2Image-Models-Demo" id="aaa" target=”_blank”>Text2Image Models Demo</a></p>
-  
-</div>
+ 
 <div id="main">
   <div id="cont">
-    <input type="text" name="" id="inp" placeholder=" Enter Prompt here.." autocomplete="off">
+    <input type="text" name="" id="inp" placeholder=" Enter Prompt here..">
     <button id="create">Create </button>
   </div>
 
@@ -497,8 +457,8 @@ progress::-moz-progress-bar {
 <p>FILM<p>
 <input type="radio" name="style" value="fumes">
 <p>Creative</p>
-<input type="radio" name="style" value="fantasy" >
-<p>LEONARDO style</p>
+<input type="radio" name="style" value="fantasy">
+<p>No Style</p>
 <input type="radio" name="style" value="no">
 </div>
 
@@ -512,56 +472,276 @@ progress::-moz-progress-bar {
  </div>
 <div id="sli">
   <label for="#step">Steps:  </label>
-  <input type="range"  id="step" value="20" min="10" max="40" step="1"><p id="stepp">20</p>
+  <input type="range"  id="step" value="20" min="10" max="40" step="1"><p id="stepp">50</p>
 </div>
 <div id="sli">
   <label for="#gds">Seed: </label>
 <input type="range" id="seed" min="0" value="0" step="1" max="99999"><p id="seedp">0</p>
  </div>
 
- <button id="close">Close</button>
-  </dialog>
 
-
-  
-  <div id="imshow">
-<p style="width: 220px;">Your Generarted Arts Will appear Here</p>
-
-    
-  </div>
-
-<div id="ads" class="ads">
+ <div id="ratio">
+  <p>1 : 1</p>
+<input type="radio" name="ratio" value="1:1" checked>
+<p>16 : 9</p>
+<input type="radio" name="ratio" value="16:9">
+<p>9 : 16<p>
+<input type="radio" name="ratio" value="9:16">
+<p>1 : 2</p>
+<input type="radio" name="ratio" value="1:2">
+<p>4 : 3</p>
+<input type="radio" name="ratio" value="4:3">
 </div>
 
 
+ <button id="close">Close</button>
+  </dialog>
   
-  
-  <script src="main.js"></script>
+  <div id="imshow">
+ <img src="https://cdn.leonardo.ai/users/e04d4f27-251a-4ef1-bd6a-44dcfe991d52/generations/79b16770-fad3-4b6b-b083-bb487d8a842f/Default_twuey_1.jpg" alt="" id="img1">
+ <img src="https://cdn.leonardo.ai/users/e04d4f27-251a-4ef1-bd6a-44dcfe991d52/generations/79b16770-fad3-4b6b-b083-bb487d8a842f/Default_twuey_1.jpg" alt="">
+
+</div>
+
+
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6Leqa5cpAAAAABVhh6FGouusHKaPjYz65-0Yy8kS"></script>
 <script>
-  </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js"></script>
 
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDA40xpjwKzWIHmDz5oRu9BircpHfqncuI",
-    authDomain: "fumesai.firebaseapp.com",
-    projectId: "fumesai",
-    storageBucket: "fumesai.appspot.com",
-    messagingSenderId: "573294764046",
-    appId: "1:573294764046:web:f98a507a60045cf8a91c5f",
-    measurementId: "G-CZ2LETVP9K"
-  };
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+
+document.getElementById('jd').onclick = ()=>{
+    window.open('https://discord.gg/ju4yQBfQ7p')
+  }
+
+ 
+  
+  /*document.getElementById('ow').onclick = ()=>{
+    window.open('https://www.buymeacoffee.com/mygx')
+  }*/
+  let isimg = false
+if(isimg == true){
+  img = document.getElementById('hehe')
+img.addEventListener("click", function() {
+    var imageUrl = this.src;
+    window.open(imageUrl, "_blank");
+});
+}
+  let dialog = document.getElementById('dialog')
+  let openbtn = document.getElementById('Advance Setting')
+  let closebtn = document.getElementById('close')
+  openbtn.onclick = ()=>{
+    dialog.show()
+    document.getElementById('imshow').style.border = '0px solid black transparent'
+  }
+  closebtn.onclick= ()=>{
+    dialog.close()
+    document.getElementById('imshow').style.background = 'linear-gradient(black, black) padding-box,linear-gradient(to right, red, blue) border-box' 
+  }
+  let inp = document.getElementById('inp')
+  let np = document.getElementById('np')
+  let gd = document.getElementById('gds')
+  let step = document.getElementById('step')
+  let seed = document.getElementById('seed')
+  let seedp = document.getElementById('seedp')
+  let stepp = document.getElementById('stepp')
+  let gdsp = document.getElementById('gdsp')
+  let btn = document.getElementById('create') 
+  let heightp = 1024
+  let widthp = 1024
+let cn = false
+  gd.addEventListener('input',()=>{
+   gdsp.innerText = gd.value
+  })
+  step.addEventListener('input',()=>{
+   stepp.innerText = step.value
+  })
+  seed.addEventListener('input',()=>{
+   seedp.innerText = seed.value
+  })
+  isFumes = true
+  let prompt = 'CINEMATIC'
+  let nps = ' ,(bad hands, bad anatomy, bad body, bad face, bad teeth, bad arms, bad legs, deformities:1.3),poorly drawn,deformed hands,deformed fingers,deformed faces,deformed eyes,mutated fingers,deformedbody parts,mutated body parts,mutated hands, disfigured,oversaturated,bad anatom,cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, deformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck,deformed eyes'
+let reload = false
+  
+  document.getElementById('styles').onchange = ()=>{
+    const selectedStyle = document.querySelector('input[name="style"]:checked');
+    if(selectedStyle.value =='photo'){
+      
+      prompt = 'PHOTOGRAPHY'
+    
+    
+    }
+    if(selectedStyle.value == 'cinema'){
+    
+      prompt = "CINEMATIC"}
+    if(selectedStyle.value == 'fantasy'){
+   
+      prompt = "CREATIVE"
+    }
+
+    if(selectedStyle.value == 'fumes'){
+    
+    prompt = 'FILM'
+}
+
+
+    if(selectedStyle.value == 'no'){
+      prompt = 'LEONARDO'
+
+    }
+  }
+
+  document.getElementById('ratio').onchange = ()=>{
+    const selectedStyle = document.querySelector('input[name="ratio"]:checked');
+    if(selectedStyle.value =='1:1'){
+      
+      widthp = 1024
+      heightp = 1024
+    
+    
+    }
+    if(selectedStyle.value == '16:9'){
+    
+      widthp = 1024
+      heightp = 576
+    
+    }
+    if(selectedStyle.value == '9:16'){
+   
+      widthp = 576
+      heightp = 1024
+    }
+
+
+
+if(selectedStyle.value == '1:2'){
+    
+    widthp = 544
+    heightp = 1088
+}
+
+
+
+
+    if(selectedStyle.value == '4:3'){
+      widthp = 896
+      heightp = 672
+     
+    }
+
+  }
+
+
+
+  btn.onclick = async () => {
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6Leqa5cpAAAAABVhh6FGouusHKaPjYz65-0Yy8kS', { action: 'submit' }).then(async function (token) {
+            if (cn == true) {
+                window.location.reload();
+            }
+            btn.innerText = "CANCEL";
+            cn = true;
+            let div = document.getElementById('imshow');
+            if (reload == true) {
+                window.location.reload();
+            }
+            isimg = false;
+            let isc = false;
+            let id = '';
+
+            negative_prompt = nps;
+            // btn.disabled = true
+            div.innerHTML = '';
+            document.getElementById('imshow').innerHTML = '';
+            let pi = document.createElement('h5');
+            pi.innerText = 'Generating Image... Estimated Time: 20s';
+            // document.getElementById('imshow').append(pi)
+            let count = 0;
+            seed = seed;
+
+            let progress = document.createElement('progress');
+            progress.value = 1;
+            progress.max = 100;
+
+            div.appendChild(progress);
+            setInterval(() => {
+                progress.value += 3;
+            }, 1100);
+
+            async function generate() {
+                cookie = localStorage.getItem("cookie");
+                u = localStorage.getItem("u");
+                sub = localStorage.getItem("sub");
+                if (cookie == null) {
+                    cookie = '';
+                }
+                if (cookie == "undefined") {
+                    cookie = '';
+                }
+                params = {
+                    'prompt': inp.value,
+                    'nprompt': np.value,
+                    "steps": Number(step.value),
+                    'guidenceScale': Number(gd.value),
+                    "style": prompt,
+                    "width": Number(widthp),
+                    "height": Number(heightp),
+                    "alchemy": true,
+                    "pr": true,
+                    token: token
+                };
+
+                try {
+                    const response = await fetch('https://fumes-api.onrender.com/leonardo', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Connection': 'keep-alive',
+                        },
+                        body: JSON.stringify(params)
+                    });
+                    if (response.status === 429) {
+                        pi.innerText = 'you have reached your limit of 50 generation per hour, you will get 50 more image generations after an hour!!';
+                    }
+
+                    cn = false
+         btn.innerText = "CREATE" 
+           const data = await response.json(); 
+           localStorage.setItem("cookie", data.token);
+           localStorage.setItem("sub", data.sub);
+           localStorage.setItem("u", data.u);
+           console.log(data.result)
+         progress.innerHTML = ''
+         progress.style.display = 'none';
+           const img = document.createElement('img');
+a = "1"
+           img.id = "hehe"
+           pi.innerHTML = ''
+           pi.innerText = ''
+           img.src = data.img[1];
+         if(window.innerWidth<600){
+           img.id = "img1"
+         }
+           div.appendChild(img);
+           console.log(widthp.innerText)
+          const img2 = document.createElement('img');
+          img2.src = data.img[2];
+           div.appendChild(img2);
+           btn.disabled = false
+           isimg = true
+                } catch (error) {
+                    btn.disabled = false;
+                    console.error('An error occurred:', error);
+                    pi.innerText = 'An error occurred, try changing your prompt';
+                }
+            }
+
+            await Promise.all([generate()]);
+        });
+    });
+};
+
 </script>
 </body>
 </html>
