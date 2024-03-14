@@ -707,6 +707,8 @@ if(selectedStyle.value == '1:2'){
                     if (response.status === 400) {
                         pi.innerText = 'reCaptcha human validation failed ⭕ user is suspected to be bot ';
                       div.append(pi)
+                      alert('human verification failed ')
+                      console.log(pi)
                     }
 
                     cn = false
