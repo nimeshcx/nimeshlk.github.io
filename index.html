@@ -704,8 +704,8 @@ if(selectedStyle.value == '1:2'){
                         },
                         body: JSON.stringify(params)
                     });
-                    if (response.status === 429) {
-                        pi.innerText = 'you have reached your limit of 50 generation per hour, you will get 50 more image generations after an hour!!';
+                    if (response.status === 400) {
+                        pi.innerText = 'reCaptcha human validation failed ⭕ user is suspected to be bot ';
                     }
 
                     cn = false
